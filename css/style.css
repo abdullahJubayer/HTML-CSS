@@ -80,3 +80,38 @@ a {
     font-size: 1.5rem;
   }
 }
+/* Link Section End*/
+
+/* Badge Section Start*/
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.bagde--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .bagde--small {
+    font-size: 1.2rem;
+  }
+}
+/* Badge Section End*/
