@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typhography Section Start*/
 
 html {
@@ -162,3 +168,53 @@ a {
   align-items: center;
 }
 /*Icon*/
+
+/*Buttons*/
+.button {
+  border: none;
+  border-radius: 40px;
+  padding: 2rem 3rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+.button--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.button--primary:hover {
+  background: #3a8ffd;
+}
+.button--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.button--secondary:hover {
+  background: #88c8eb;
+}
+.button--accent {
+  background: var(--color-accent);
+  color: white;
+}
+.button--accent:hover {
+  background: #ec3000;
+}
+.button--border {
+  border: 2px solid var(--color-headings);
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.4rem;
+  }
+}
+/*Buttons*/
