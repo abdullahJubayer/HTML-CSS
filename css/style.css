@@ -219,7 +219,10 @@ a {
 .button--border {
   border: 2px solid var(--color-headings);
 }
-
+.button--large {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .button--block {
   width: 100%;
   display: inline-block;
@@ -432,3 +435,42 @@ a {
 }
 
 /*testimonial*/
+
+/*Collout*/
+.collout {
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.callout__heading {
+  margin-top: 0;
+  color: white;
+  font-size: 3rem;
+}
+
+.collout__content {
+  text-align: center;
+}
+.collout .button {
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .collout .grid {
+    grid-template-columns: 1fr auto;
+  }
+  .collout__content {
+    text-align: left;
+  }
+  .collout .button {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+/*Collout*/
