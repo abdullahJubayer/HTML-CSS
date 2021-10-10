@@ -111,6 +111,11 @@ a {
   color: white;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .block--plans .badge--primary {
   background: #126de4;
 }
@@ -191,7 +196,7 @@ a {
 .button {
   border: none;
   border-radius: 40px;
-  padding: 2rem 3rem;
+  padding: 2rem 4vh;
   font-weight: 600;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -273,6 +278,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .button {
   margin: 4px;
@@ -298,6 +304,9 @@ a {
 .card--header,
 .card--body {
   padding: 2rem 3rem;
+}
+.card--primary {
+  color: white;
 }
 .card--primary .card--header {
   background: var(--color-primary);
@@ -471,11 +480,14 @@ a {
 /*testimonial*/
 
 /*Collout*/
+
 .collout {
   padding: 4rem;
   border-radius: 10px;
 }
-
+.callout-signup {
+  transform: translateY(10rem);
+}
 .callout--primary {
   background: var(--color-primary);
   color: white;
@@ -738,6 +750,7 @@ a {
 /*Footer*/
 .footer {
   background: #232323;
+  padding-top: 15rem;
 }
 .footer_section {
   border-bottom: 1px solid #393939;
@@ -794,3 +807,10 @@ a {
   }
 }
 /*Footer*/
+
+.card_footer {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  background: var(--color-secondary);
+  color: white;
+}
