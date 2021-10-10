@@ -1,0 +1,18 @@
+body {
+  padding: 10px;
+}
+
+p {
+  color: blue;
+}
+#id_selector {
+  color: blueviolet;
+}
+
+.class_selector {
+  color: red;
+}
+
+a[target] {
+  color: brown;
+}

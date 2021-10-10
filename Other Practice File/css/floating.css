@@ -1,0 +1,18 @@
+.tweets {
+  border: 5px solid gray;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+}
+/* parent collasp solution */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clear_float {
+  clear: both;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <title>From Elements</title>
+    <body>
+        <form>
+            <label for="drop_down">Select One</label>
+            <select id="drop_down" name="drop_down_list">
+                <option value="One">One</option>
+                <option value="Two" selected>Two</option>
+                <option value="Three">Three</option>
+            </select>
+
+            <label for="drop_down2">Select One</label>
+            <select id="drop_down2" name="drop_down_list2" multiple>
+                <option value="One">One</option>
+                <option value="Two" selected>Two</option>
+                <option value="Three">Three</option>
+            </select>
+
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </fieldset>
+
+              <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+        </form>
+
+        <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+         </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "roboto_regular";
+  src: url("roboto/roboto-regular-webfont.woff2") format("woff2"),
+    url("roboto/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+.para_1 {
+  font-family: "roboto_regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.para_2 {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.para_3 {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  width: 50ch;
+}

@@ -1,0 +1,43 @@
+body {
+  padding: 10px;
+}
+
+#first_clid :first-child {
+  font-size: 140%;
+  font-style: italic;
+}
+#first_clid :last-child {
+  font-size: 120%;
+  color: yellow;
+}
+
+#first_of_child :first-of-type {
+  font-size: 150%;
+  font-weight: bold;
+}
+#last_of_child :last-of-type {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+#first_of_child :last-of-type {
+  font-size: 140%;
+  font-weight: bold;
+  color: blue;
+}
+
+#first_of_child_specific_element p:first-of-type {
+  font-size: 140%;
+  color: brown;
+}
+
+ul li :nth-child(odd) {
+  color: crimson;
+}
+
+a :link {
+  color: red;
+}
+a :visited {
+  color: red;
+}

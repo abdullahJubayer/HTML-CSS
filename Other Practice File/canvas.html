@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CANVAS Example</title>
+    </head>
+    <body>
+        <canvas id="triangle_canvas" width="200" height="200" style="border: 1px solid #000000;"></canvas></br>
+        <canvas id="circle_canvas" width="200" height="200" style="border: 1px solid #000000; border-radius:100px ;"></canvas></br>
+        <canvas id="triangle_with_circle" width="200" height="200" style="border: 1px solid #000000;"></canvas></br>
+        <script>
+            var c = document.getElementById("triangle_with_circle");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+    </body>
+</html>

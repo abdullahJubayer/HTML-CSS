@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Box</title>
+        <style>
+            *{box-sizing: border-box;}
+            body{font-family: Arial, Helvetica, sans-serif;}
+            header{
+                background-color: #666;
+                padding: 20px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+            section{
+                display: -webkit-flex;
+                display: flex;
+            }
+            nav{
+                -webkit-flex:1;
+                -ms-flex: 1;
+                flex: 1;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            article{
+                -webkit-flex:3;
+                -ms-flex: 3;
+                background-color: #f1f1f1;
+                padding: 10px;
+                flex: 3;
+            }
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media(max-width:600px){
+                section{
+                    -webkit-flex-direction:column;
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex Box Example</h1>
+        <header>
+            <h2>Cities</h2>
+        </header>
+
+            <section>
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Description</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <h2>London</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur accusantium sunt minima eveniet maxime. Architecto, voluptates alias modi tempora sint enim, ducimus ea dolorem veniam dolor quos aliquid ratione aliquam?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, esse aliquam quod ipsum natus sint accusamus. Non distinctio veritatis iste obcaecati, officiis laudantium, cupiditate impedit corporis soluta sint incidunt libero?</p>
+                </article>
+            </section>
+            <footer>
+                <p>Footer</p>
+            </footer>
+    </body>
+</html>

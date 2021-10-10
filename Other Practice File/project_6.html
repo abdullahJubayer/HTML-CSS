@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fulla layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scal=1">
+        <style>
+            *{box-sizing: border-box;}
+            body{font-family: Arial, Helvetica, sans-serif;}
+            header{
+                background-color: #666;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+            }
+            nav{
+                float: left;
+                width: 30%;
+                height: 300px;
+                padding: 20px;
+                background-color: #ccc;
+            }
+            nav ul{list-style-type: none;padding: 0;}
+            article{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                height: 300px;
+                background-color: #f1f1f1;
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                padding: 10px;
+                text-align: center;
+                color: white;
+                background-color: #777;
+            }
+            @media(max-width: 600px){
+                nav,artical{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Layout with Float</h1>
+        <header><h2>City</h2></header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a>London</a></li>
+                    <li><a>Paris</a></li>
+                    <li><a>Tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>London</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat ipsum itaque ratione quam deleniti, beatae sed. Eveniet quam dolorum odit consequatur beatae earum error aliquam cumque provident. Nemo, ipsum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati eos harum voluptates repudiandae nisi libero. Sit, iste quae quos voluptas blanditiis quod voluptate est dolorem! Consequatur velit laudantium mollitia.</p>
+            </article>
+        </section>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>

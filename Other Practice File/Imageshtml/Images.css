@@ -1,0 +1,28 @@
+/* body {
+  background: url(../images/meal-cropped.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300vh;
+  background-attachment: fixed;
+} */
+
+image {
+  width: 100vh;
+}
+
+.ufo {
+  width: 100px;
+  height: 100px;
+  background: url("../images/css_sprites.png") -130px -10px;
+  display: inline-block;
+}
+.rocketship {
+  width: 100px;
+  height: 100px;
+  background: url("../images/css_sprites.png") -10px -10px;
+  display: inline-block;
+}
+
+.girl{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Example</title>
+        <style>
+            table{width: 100%;}
+            table,tr,th,td{border: 1px solid tomato; border-collapse: collapse;}
+            .th,td{padding: 10px;}
+            #vertical_table th{text-align: left; width: 100%;padding: 10px;}
+            #id_exmp{width: 100%;}
+            #id_exmp table,th,td{border: 1px solid tomato}
+            #id_exmp tr,th{padding: 10; text-align: left;}
+            #id_exmp tr:nth-child(even) {
+                background-color: #eee;
+                }
+            #id_exmp tr:nth-child(odd) {
+            background-color: #fff;
+            }
+            table.class_exmp{width: 100%;}
+            table.class_exmp,th,td{border: 1px solid tomato}
+            table.class_exmp tr,th{padding: 10; text-align: left;}
+        </style>
+    </head>
+    <body>
+        <h1>3 row and 3 column</h1>
+        <table>
+            <tr>
+                <th>Name</td>
+                <th>Description</td>
+                <th>ID</td>
+            </tr>
+            <tr>
+                <td>Aj</td>
+                <td>Lazy</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Dj</td>
+                <td>Lazy</td>
+                <td>Id</td>
+            </tr>
+            <tr>
+                <td>PK</td>
+                <td>Lazy</td>
+                <td>ID</td>
+            </tr>
+        </table>
+
+        <h1>3 row and 3 column With Padding</h1>
+        <table>
+            <tr>
+                <td >Name</td>
+                <td >Description</td>
+                <td >ID</td>
+            </tr>
+            <tr>
+                <td>Aj</td>
+                <td>Lazy</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Dj</td>
+                <td >Lazy</td>
+                <td >Id</td>
+            </tr>
+            <tr>
+                <td >PK</td>
+                <td >Lazy</td>
+                <td >ID</td>
+            </tr>
+        </table>
+
+        <h1>Table with  Vertical Heading</h1>
+        <table id="vertical_table">
+            <tr>
+                <th>Name : </th>
+                <td>Aj</td>
+            </tr>
+            <tr>
+                <th >Description : </th>
+                <td>xxxxxxxxxxxxx</td>
+            </tr>
+            <tr>
+                <th >ID : </th>
+                <td >100</td>
+            </tr>
+        </table>
+
+        <h1>Table with inside design</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>This is a paragrapg</p>
+                    <p>This is another Paragraph</p>
+                </td>
+                <td>
+                    Cell Contains Table
+                    <table>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contains a list
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                        <li>pineApple</li>
+                    </ul>
+                </td>
+                <td>
+                    HELLO
+                </td>
+            </tr>
+        </table>
+
+        <h1>Style Using Id</h1>
+        <table id="id_exmp">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+        </table>
+
+        <h1>Style Using Class</h1>
+        <table class="class_exmp">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>AJ</td>
+                <td>Dj</td>
+                <td>21</td>
+            </tr>
+        </table>
+    </body>
+</html>

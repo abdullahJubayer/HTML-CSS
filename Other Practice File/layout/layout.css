@@ -1,0 +1,41 @@
+.body {
+  height: 500px;
+  font-size: 10px;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  box-sizing: border-box;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  box-sizing: content-box;
+  padding: 20px;
+}
+
+.item1 {
+  width: 50%;
+  height: 20%;
+  background-color: gold;
+}
+
+.item2 {
+  width: 50vw;
+  height: 50vh;
+  background-color: gold;
+}
+.item3 {
+  font-size: 5px;
+  width: 50em;
+  height: 50em;
+  background-color: gold;
+}
+.item4 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
