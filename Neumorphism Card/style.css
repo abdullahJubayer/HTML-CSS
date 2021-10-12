@@ -5,36 +5,37 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: #ebeffc;
+html {
+  font-size: 62.5%;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  flex-wrap: wrap;
+/* Refoctor Area */
+.item--container {
+  max-width: 120rem;
   padding: 4rem 0;
 }
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.container .card {
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+.card--outer--border {
   position: relative;
-  width: 320px;
-  height: 440px;
+  width: 32rem;
+  height: 44rem;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset 5px 5px 5px rgba(0, 0, 0, 0.05), 5px 5px 5px rgba(0, 0, 0, 0.05),
     5px 5px 5px rgba(0, 0, 0, 0.05);
 
-  border-radius: 15px;
-  margin: 30px;
+  border-radius: 1.5rem;
+  margin: 3rem;
 }
 
-.container .card .box {
+.card {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -42,66 +43,65 @@ body {
   bottom: 20px;
   background: #ebf5fc;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   transition: 0.5s;
 }
 
-.container .card:hover .box {
-  transform: translateY(-50px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(45deg, #b95ce3, #4f29cd);
-}
-.container .card .box .content {
-  padding: 20px;
-  text-align: center;
+.card--content {
+  padding: 2rem;
 }
 
-.container .card .box .content > h2 {
+.card__content__header {
   position: absolute;
   top: 10px;
   right: 30px;
-  font-size: 8em;
+}
+.card__content__text {
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.card--content > h2 {
+  font-size: 8rem;
   color: rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
 
-.container .card .box .content > h3 {
-  font-size: 1.8em;
-  color: #777;
-  z-index: 1;
-  transition: 0.5s;
+.card--content > h3 {
+  font-size: 1.8rem;
 }
 
-.container .card .box .content > p {
-  font-size: 1em;
-  color: #777;
+.card--content > p {
+  font-size: 1.5rem;
   font-weight: 300;
-  z-index: 1;
-  transition: 0.5s;
+  margin: 1rem 0;
+  line-height: 1.5;
 }
 
-.container .card .box .content > a {
+.card--content > a {
   position: relative;
   display: inline-block;
   background: skyblue;
   padding: 8px 20px;
-  margin-top: 10px;
   border-radius: 20px;
   text-decoration: none;
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   font-weight: 400;
+  margin: 1rem auto;
 }
 
-.container .card .box:hover .content > a {
+.card:hover {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce3, #4f29cd);
+}
+.card__content__text:hover {
+  color: white;
+}
+
+.card--content:hover > a {
   background: palevioletred;
   transition: 0.5s;
 }
-
-.container .card .box:hover .content > h3,
-.container .card .box:hover .content > p {
-  color: white;
-}
+/* Refoctor Area */
