@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+}
+
+.nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: #d2d2d2;
+}
+
+.list {
+  list-style: none;
+  height: 100%;
+}
+
+.list__item {
+  padding: 1rem 2rem;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__item > a {
+  color: #d2d2d2;
+  text-decoration: none;
+}
+
+.list__item:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.collapsible__body__content {
+  position: absolute;
+  top: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.collapsible--expand .collapsible__body__content {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.close--icon {
+  margin: 1rem 2.5rem;
+  position: absolute;
+  right: 0;
+}
