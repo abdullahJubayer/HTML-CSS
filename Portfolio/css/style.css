@@ -1,0 +1,48 @@
+@import url(utils.css);
+
+:root {
+  --primary-color: #3dcfd3;
+  --dark-color: #161616;
+  --pure-color: #ffffff;
+  --ternary-color: #898989;
+  --light-color: #f2f2f2;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: var(--dark-color);
+  height: 800px;
+}
+
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+.branding {
+  margin-right: 3rem;
+}
+
+.links > a {
+  color: var(--pure-color);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.links > a:hover {
+  color: var(--primary-color);
+}
