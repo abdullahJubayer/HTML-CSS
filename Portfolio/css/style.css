@@ -18,7 +18,7 @@ body {
 
 header {
   background: var(--dark-color);
-  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 
 .container {
@@ -45,4 +45,347 @@ header nav {
 
 .links > a:hover {
   color: var(--primary-color);
+}
+
+.btn {
+  padding: 0.8rem 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.btn-secondary {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero__right {
+  color: var(--pure-color);
+  margin-top: -8rem;
+}
+.hero__right h6 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.hero__right h2 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero__right h2 span {
+  color: var(--primary-color);
+}
+
+.hero__right p {
+  font-weight: 100;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about {
+  padding: 6rem 0;
+}
+
+.about__right h2 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.about__right h6 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.about__right p {
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.about__right h2 span {
+  color: var(--primary-color);
+}
+
+.social_link {
+  display: flex;
+}
+
+.social_link a {
+  background: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.social_link a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.social_link a:hover {
+  background: var(--primary-color);
+}
+
+.services {
+  background: var(--light-color);
+}
+
+.services__header {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 4rem;
+}
+
+.services__header span {
+  color: var(--primary-color);
+}
+
+.services__text {
+  color: var(--ternary-color);
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+  margin-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background: var(--pure-color);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background: var(--dark-color);
+  color: white;
+}
+.card h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+.card img {
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.freelance{
+  padding-top: 4rem;
+  padding-bottom: 15rem;
+  text-align: center;
+  color: var(--pure-color);
+  clip-path: polygon(0 0,100% 0,100% 100%,65% 78%,0 100%);
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../images/camera.png);
+}
+
+.freelance h2{
+  font-weight: 500;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.freelance p{
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.work{
+  background: var(--light-color);
+}
+
+.work-image-wraper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 4rem 0;
+}
+.work-image{
+  position: relative;
+  height: 250px;
+}
+.work-image img{
+  width: 100%;
+  height: 100%;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.overlay span{
+  color: var(--light-color);
+}
+.overlay a{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.work-image:hover .overlay{
+  opacity: 1;
+}
+
+.blog .container{
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+  color: white;
+  background: var(--dark-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.blog-card-wraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog__card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--pure-color);
+  max-width: 300px;
+  border: none;
+  outline: none;
+  margin: 3rem .7rem;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.card__content{
+  padding: 1.5rem;
+}
+
+.card__content h2{
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+.card__date{
+  color: var(--light-color);
+  margin-bottom: .3rem;
+  opacity: .5;
+}
+.card__content p{
+  color: var(--ternary-color);
+  line-height: 1.5rem;
+  margin-bottom: .3rem;
+}
+
+.card__content a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.contract{
+  text-align: center;
+  margin: 2rem;
+}
+
+.input-1x2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.input-box textarea,
+.input-box input{ 
+  padding: .8rem 2rem;
+  border: 2px solid var(--light-color);
+  outline: 0;
+}
+
+.input-1x{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer{
+  background: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: var(--ternary-color);
+  font-weight: 400;
+}
+
+
+.footer img{
+  max-width: 10rem;
+  max-height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.footer .social_link{
+  margin-bottom: 1rem;
+}
+.footer .social_link a{
+  background: var(--primary-color);
+  width: 24px;
+  height: 24px;
+}
+
+.footer .social_link a:hover{
+  background: var(--ternary-color);
 }

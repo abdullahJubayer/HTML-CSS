@@ -10,23 +10,8 @@
   justify-content: space-between;
 }
 
-.btn {
-  padding: 0.8rem 3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  outline: none;
-  cursor: pointer;
+.flex-1 {
+  flex: 1;
 }
 
-.btn-primary {
-  background: var(--primary-color);
-  color: var(--dark-color);
-}
 
-.btn-primary:hover {
-  background: transparent;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
