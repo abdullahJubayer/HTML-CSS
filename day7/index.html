@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="mb-3">
+                <label for="email" class="form-label">Example Email</label>
+                <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password">Example Password</label>
+                <input type="password" class="form-control">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input id="checkbox" type="checkbox" class="form-check-input">
+                <label for="checkbox" class="form-check-label">Check me on</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div class="row mt-5 mb-5 align-items-center">
+            <div class="col-auto">
+                <label for="Password" class="col-form-label">Password</label>
+            </div>
+            <div class="col-auto">
+                <input id="Password" class="form-control" aria-describedby="password-inline"></input>
+            </div>
+            <div class="col-auto">
+                <span id="password-inline" class="form-text">Must be 8-10 Character</span>
+            </div>
+        </div>
+
+        <form>
+            <fieldset disabled>
+              <legend>Disabled fieldset example</legend>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Disabled input</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+              </div>
+              <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                <select id="disabledSelect" class="form-select">
+                  <option>Disabled select</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                  <label class="form-check-label" for="disabledFieldsetCheck">
+                    Can't check this
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+          </form>
+
+            <select class="form-select m-4" aria-label="Default Select Example">
+              <option selected>Click to set an Item</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select m-4" size="3" aria-label="size-3 select example">
+              <option selected>Click to set an Item</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="5">Four</option>
+              <option value="6">Five</option>
+              <option value="7">Six</option>
+            </select>
+
+            <div class="form-check">
+              <label for="flexCheckIndeterminate" class="form-check-label">Diterminate Check</label>
+              <input type="checkbox" id="flexCheckIndeterminate" class="form-check-input">
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" role="switch" id="switch">
+                <label for="switch" class="form-check-label">ONOff</label>
+            </div>
+            <div class="form-check form-switch">
+              <input type="checkbox" class="form-check-input" role="switch" id="switch" checked>
+              <label for="switch" class="form-check-label">ONOff</label>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server" disabled>
+          </div>
+          
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
